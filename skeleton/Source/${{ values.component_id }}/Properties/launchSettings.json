@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "${{ values.component_id }}": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": false,
+      "launchUrl": "api/version",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "${{ values.component_id }}",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "1.0.4",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-shell": "^1.1.1",
+    "grunt-nucheck": "^0.0.4"
+  }
+}

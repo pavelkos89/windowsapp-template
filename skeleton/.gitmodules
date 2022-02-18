@@ -1,0 +1,10 @@
+[submodule "Source/Shared.Chocolatey"]
+	path = Source/Shared.Chocolatey
+	url = https://elements@dev.azure.com/elements/Projects/_git/Shared.Chocolatey
+	branch = master
+	ignore = all
+[submodule "Source/Docker.ContainerHelpers"]
+	path = Source/Docker.ContainerHelpers
+	url = https://elements@dev.azure.com/elements/Projects/_git/Docker.ContainerHelpers
+	branch = master
+	ignore = all

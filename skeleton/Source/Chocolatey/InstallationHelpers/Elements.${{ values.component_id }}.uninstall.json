@@ -1,0 +1,9 @@
+{
+  "ChocoPackageUninstaller": [
+    {
+      "Name": "Elements.${{ values.component_id }}",
+      "ServerName": "TargetMachine",
+      "StatusExpected": "Ok"
+    }
+  ]
+}

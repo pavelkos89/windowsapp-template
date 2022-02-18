@@ -1,0 +1,34 @@
+<Project>
+	<!--
+	  This file is used by all projects.
+		For more details:
+		- https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019
+		- https://andrewlock.net/version-vs-versionsuffix-vs-packageversion-what-do-they-all-mean/
+	-->
+	<PropertyGroup>
+		<Company>Sikri AS</Company>
+		<Product>${{ values.component_id }}</Product>
+		<Copyright>Sikri AS © PROJECT_YEAR</Copyright>
+
+		<!-- Use semver for VersionPrefix -->
+		<VersionPrefix>0.1.0</VersionPrefix>
+
+		<!--
+			When VersionSufix is set, it indicates that this is a beta-version.
+			VersionSufix should be cleared for official releases.
+		-->
+		<VersionSuffix>vNext</VersionSuffix>
+
+		<!--
+			FileVersion should only be used for patches:
+				If this is the first patch:
+					- Uncomment FileVersion and set it to the same value as "VersionPrefix", and increase last number
+				If this is not the first patch:
+					- Increase last number
+		-->
+		<!--<FileVersion>x.x.x</FileVersion>-->
+	</PropertyGroup>
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+</Project>

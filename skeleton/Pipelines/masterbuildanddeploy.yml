@@ -1,0 +1,23 @@
+trigger:
+  branches:
+    include:
+      - '*'
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: Pipelines
+      ref: refs/heads/main # optional ref to pin to
+    - repository: darklaunchdestinationrepo
+      type: git
+      name: Helmcharts.Master
+      ref: refs/heads/main # optional ref to pin to
+
+extends:
+  template: PipelineTemplates/masterbuildanddeploy.yml@templates
+  parameters:
+    containerrepository: 'elements/${{ values.component_id | lower }}'
+    deploymentName: 'elements-dev01-${{ values.component_id | lower }}-deployment'
+    modulename: '${{ values.component_id | lower }}'
+    dotnetSdkVersion: '6.x'

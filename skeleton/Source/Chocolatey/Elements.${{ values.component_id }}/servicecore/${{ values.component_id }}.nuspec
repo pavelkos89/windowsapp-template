@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+		<id>Elements.${{ values.component_id }}</id>
+		<title>Elements.${{ values.component_id }}</title>
+		<version>WILL_BE_REPLACED_DURING_PACKAGE_CREATION</version>
+		<authors>SIKRI AS</authors>
+		<owners>SIKRI AS</owners>
+		<summary>Elements.${{ values.component_id }}</summary>
+		<description>Elements.${{ values.component_id }}</description>
+		<projectUrl>http://www.sikri.no</projectUrl>
+		<packageSourceUrl>http://does.not.apply</packageSourceUrl>
+		<tags>Elements.${{ values.component_id }}</tags>
+		<copyright>SIKRI AS</copyright>
+		<licenseUrl>http://www.sikri.no</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="**" target="tools" />
+	</files>
+</package>
